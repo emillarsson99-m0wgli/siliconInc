@@ -546,3 +546,57 @@ button{
         }
     }
 }
+
+
+.brand-container{
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+    .brands {
+        display: none;
+        margin-top: 40px;
+
+        @media (width >= 768px) {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            #brand-desktop1 {
+                display: none;
+            }
+            #brand-desktop2 {
+                display: none;
+            }
+        }
+
+        @media (width >= 1200px) {
+            #brand-desktop1 {
+                display: flex;
+            }
+            #brand-desktop2 {
+                display: flex;
+            }
+        }
+    }
+
+    .brand-item {
+        background-color: var(--brand-background);
+        border: 1px solid var(--brand-border);
+        height: 99px;
+        width: 158px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    brand-icon {
+        width: 140px;
+        height: 33px;
+    }
+}
