@@ -600,3 +600,132 @@ button{
         height: 33px;
     }
 }
+
+
+.feature-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+
+    #headline-title {
+        font-size: 4rem;
+    }
+
+    @media (width >= 1200px) {
+
+        #headline-description {
+        text-align: left;
+        }
+
+        #headline-title {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 800;
+            width: 100%;
+        }
+    }
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+
+    .feature-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+
+    .feature-boxes {
+        display: flex;
+        flex-direction: column;
+        max-width: 746px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .feature-phone-icon {
+        display: none;
+    }
+
+    .feature-item{
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .feature-icon-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius:  8px;
+        background-color: var(--feature-icon-box);
+        margin-top: 1rem;
+    }
+
+    .feature-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    .feature-content{
+        max-width: 600px;
+    }
+
+    .feature-headline{
+        font-size: 20px;
+    }
+
+    .feature-description{
+        margin: 0;
+        width: 100%;
+        max-width: 250px;
+        color: var(--color-description);
+    }
+
+    #headline-title{
+        font-size: 28px;
+    }
+
+    #headline-description{
+        font-size: 18px;
+        color: var(--color-description);
+    }
+
+    @media (width >=768px) {
+        .feature-boxes {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    } 
+    
+    @media (width >= 1200px) {
+        .feature-container {
+            gap: 12rem;
+        }
+        .feature-phone-icon {
+            display: flex;
+        }
+    }
+}
