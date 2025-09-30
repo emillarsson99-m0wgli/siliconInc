@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: "Manrope", sans-serif;
+}
+
+:root{
+    --color-bg: #F3F6FF;
+    --color-secondary: #EFF2FC;
+    --color-divider-border: #E2E5F1;
+    --color-forms-border: #D4D7E5;
+    --color-input-placeholder: #B4B7C9;
+    --color-muted-text: #9397AD;
+    --color-body-text: #565973;
+    --color-navigation: #33354D;
+    --color-heading-dark: #0B0F19;
+    --box-shadow: #37393d0e;
+
+    --button-text: #FFFFFF;
+
+    --button-text: #FFFFFF;
+
+    --color-primary: #6366F1;
+    --color-description: #585C7B;
+
+    --download-button-color: #131022;
+    --download-button-text: #FFFFFF;
+    --apple-logo: #FFFFFF;
+
+    --toggle-switch: #ffffff;
+    --toggle-switch-bg: #6366F1;
+
+    --brand-border: #E2E5F1;
+    --brand-background: #ffffff;
+
+    --feature-icon-box: #F3F6FF;
+
+    --HDIT-bg: #f3f6ff;
+
+    --app-feature-title: #0B0F19;
+    --app-feature-description: #585C7B;
+    
+    --testimonials-bg: #f3f6ff;
+    --testimonials-box: #FFFFFF;
+
+    --faq-arrow-bg: #F3F6FF;
+    --faq-arrow: #33354D;
+    --faq-arrow-open-bg: #6366F1;
+    --faq-arrow-open: #FFFFFF;
+    --faq-box-border: #F3F6FF;
+    --faq-text: #585C7B;
+    
+    --contact-box-border: #E2E5F1;
+    --contact-text: #ffffff;
+    --contact-call-us: #6366F1;
+    --contact-message-us: #22C55E;
+    --newsletter-box: #F3F6FF;
+    --email-box:#ffffff;
+    --email-subscribe: #ffffff;
+
+    --footer-text: #9397AD;
+}
+
+img, svg{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: var(--color-body);
+    width: 100%;
+}
+
+.dark{
+    color-scheme: dark;
+    --color-body: #06112d4a;
+    --color-bg: #0B0F19;
+    --color-secondary: #EFF2FC;
+    --color-divider-border: #E2E5F1;
+    --color-forms-border: #D4D7E5;
+    --color-input-placeholder: #B4B7C9;
+    --color-muted-text: #9397AD;
+    --color-body-text: #565973;
+    --color-navigation: #33354D;
+    --color-heading-dark: #FFFFFF;
+    --box-shadow: #00000000;
+
+    --button-text: #FFFFFF;
+
+    --color-primary: #6366F1;
+    --color-description: #585C7B;
+
+    --download-button-color: #F3F6FF;
+    --download-button-text: #33354D;
+    --apple-logo: #33354D;
+
+
+    --toggle-switch: #ffffff;
+    --toggle-switch-bg: #6366F1;
+
+    --brand-border: #E2E5F1;
+    --brand-background: #131022;
+
+    --feature-icon-box: #1c202aaa;
+
+    --HDIT-bg: #1c202aaa;
+
+    --app-feature-title: #FFFFFF;
+
+    --testimonials-bg: #1c202aaa;
+    --testimonials-box: rgba(255, 255, 255, 0.04);
+
+    --faq-box-mobile: #131022;
+    --faq-box: #1c202aaa;
+    --faq-description: #131022;
+    --faq-arrow-bg: #F3F6FF;
+    --faq-arrow: #33354D;
+    --faq-arrow-open-bg: #6366F1;
+    --faq-arrow-open: #FFFFFF;
+    --faq-box-border: #ffffff30;
+    --faq-text: #ffffffbc;
+
+    --newsletter-box: #1c202aaa;
+    --email-box: #ffffff;
+    --email-subscribe: #ffffff;
+    --email-input-border: #D4D7E5;
+    --footer-text: #9397AD;
+
+}
+
+
+p {
+    line-height: 22px;
+}
+
+
+button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 162px;
+    max-width: 100%;
+    background-color: var(--color-primary);
+    color: var(--button-text);
+    border: none;
+    border-radius: 6px;
+
+    &:hover{
+        background-color: black;
+    }
+    &:active{
+        background-color: rgb(0, 185, 40);
+    }
+}
+
+
+.header-container { 
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    .header-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+     .actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+
+        .darkmode {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    .darkmode-tablet {
+        display: none;
+                
+    }
+    .nav{
+        width: 40px;
+        height:36px;
+        flex-shrink: 0;
+        object-fit: contain;
+        margin-bottom: .15rem ;
+    }
+
+    .account{
+        display: none;
+        
+        @media (width >= 1320px) {
+            display: flex;
+        }
+    }
+
+    .btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 162px;
+        max-width: 100%;
+        background-color: var(--color-primary);
+        color: var(--button-text);
+        border: none;
+        border-radius: 6px;
+        text-decoration: none;
+
+        &:hover{
+            background-color: black;
+        }
+        &:active{
+            background-color: rgb(0, 185, 40);
+        }
+    }
+
+    @media (width >= 768px) {
+
+        .darkmode {
+            gap: 1rem;
+            margin-right: 2.5rem;
+        }
+        .darkmode-tablet {
+            display: flex;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    @media (width >= 1200px) {
+        .nav {
+            display: none;
+        }
+    }
+}
+
+
+.toggle{
+    --_w: 46px;
+    --_h: 24px;
+
+    width: var(--_w);
+    height: var(--_h);
+    flex-shrink: none;
+    position: relative;
+    display: inline-block;
+
+    input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .slider{
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: var(--color-muted-text);
+        border-radius: 100vw;
+        box-shadow: 0 0 5px #0000034e;
+        transition: 400ms;
+
+        &::before{
+            content:'';
+            position: absolute;
+            height: 75%;
+            aspect-ratio: 1;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 5px #00000038;
+            transition: 400ms;
+            top: 50%;
+            left: 7%;
+            transform: translateY(-50%);
+        }
+    }
+
+    input[type="checkbox"]:checked + .slider::before {
+        left: calc(100% - var(--_h));
+        background-color: var(--toggle-switch);
+    }
+        input[type="checkbox"]:checked + .slider{
+        background-color:var(--color-primary);
+    }
+
+}
+
+.hero-background {
+        background: radial-gradient(ellipse at bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(0, 0, 0, 0.07) 83%);
+}
+#header{
+
+
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-headline-container {
+
+        display: flex;
+        justify-content: center;
+    }
+    .hero-headline{
+
+        font-weight: 900;
+        color: var(--color-heading-dark);
+        width:100%;
+        max-width: 330px;
+        font-size: 34px;
+    }
+    .hero-paragraph-mobile {
+        font-weight: 400;
+        line-height:25px;
+        width: 100%;
+        max-width: 600px;
+        font-size: 18px;
+        color: var(--color-description);
+    }
+    .hero-paragraph{
+        font-weight: 400;
+        line-height:25px;
+        width: 100%;
+        max-width: 600px;
+        font-size: 18px;
+        color: var(--color-description);
+        display: none;
+    }
+
+    .app-download-btns{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem; 
+    }
+    .btn-download{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 8px;
+        text-decoration: none;
+        width: 100%;
+        max-width: none;
+    }
+
+
+    .download-app{
+        background-color: var(--download-button-color);
+        color: var(--download-button-text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+        height: 50px;
+        border-radius: 6px;   
+    }
+
+    .download-content {
+        margin: 10px;
+    }
+
+    .download-text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 1px; 
+        align-items: flex-start;
+    }
+
+    .download-app-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .download-app-bottom-text {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1;
+    }
+
+    .hero-phones{
+        display: none;
+    }
+    #apple-logo {
+        background-color: var(--apple-logo);
+        mask: url('Icons/Apple-logo-light.svg') no-repeat center;
+        mask-size: contain;
+        width: 30px;
+        height: 30px;
+    }
+    @media (width >= 768px) {
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+        .hero-headline-container {
+            display: flex;
+            justify-content: center;
+        }
+        .hero-headline {
+            width: 100%;
+            max-width: 442px;
+            font-size: 44px;
+            line-height: 57px;
+            text-align: center;
+            order: 1;
+        }
+        .hero-content {
+            margin-top: 4rem;
+        }
+        .hero-paragraph {
+            display: flex;
+            max-width: 270px;
+            text-align: left;
+            line-height: 29px;
+            margin-top: 0;
+            margin-bottom: 0rem;
+        }
+        .hero-paragraph-mobile {
+            display: none;
+        }
+        .hero-phone-container {
+            display: flex;
+            
+        }
+        .hero-phones {
+            display: flex;
+            max-width: 390px;
+        }
+        .download-app-text {
+            font-size: 7px ;
+        }
+        .download-app-bottom-text {
+            font-size: 13px;
+        }
+        .download-app-icon {
+            width: 17px;
+            height: auto;
+        }
+        .app-download-btns {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: flex-start;
+            padding: 0;
+        }
+        .download-app {
+            width: 126px;
+            height: 40px;
+                      
+        }
+        .btn-download {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            width: auto;
+            max-width: 270px;
+            justify-content: flex-start;
+            padding: 0;
+            padding-top: 1rem;
+        }
+    }
+
+    @media (width >= 1200px) {
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .hero-headline {
+            text-align: left;
+            position: relative;
+            top: 100px;
+            max-width: 600px;
+            width: 100%;
+            font-size: 56px;
+        }
+
+        .hero-phone-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 4rem;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-phones {
+            flex: 1;
+            min-width: 650px;
+            padding-left: 30px;
+        }
+
+        .hero-paragraph {
+            min-width: 526px;
+        }
+
+        .download-app-text {
+            font-size: 12px ;
+        }
+
+        .download-app-bottom-text {
+            font-size: 21px;
+        }
+
+        .download-app-icon {
+            width: 25px;
+            height: auto;
+        }
+
+        .download-app {
+            width: 180px;
+            height: 52px;                      
+        }
+    }
+}
